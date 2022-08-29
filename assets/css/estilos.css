@@ -1,0 +1,102 @@
+/*ESTILOS GENERALES*/
+li{list-style-type: none;padding: 10px;}
+a{text-decoration: none;}
+.p-50{padding: 50px;}
+.padT-20{padding-top: 20px;}
+.padB-20{padding-bottom: 20px;}
+.m-50{margin: 50px;}
+.bgPrimario{background-color: skyblue;}
+.bgSecundario{background-color: lightblue;}
+h1{font-size: 2rem;}
+/*INDEX*/
+body .gridIndex{background-color: pink;}
+
+/*GRID INDEX*/
+.gridIndex{
+	display: grid;
+	grid-template-areas: 
+	"header"
+	"main"
+	"footer";
+	grid-template-columns: 100%;
+	grid-template-rows: auto auto auto;
+}
+header{grid-area: header;}
+main{grid-area: main;}
+footer{grid-area: footer;}
+/*GRID MAIN*/
+.gridMain{
+	display: grid;
+	grid-template-areas: 
+	"encabezado encabezado"
+	"imgMain txtMain";
+	grid-template-columns: 50% 50%;
+	grid-template-rows: auto auto;
+}
+.encabezado{grid-area: encabezado;}
+.imgMain{grid-area: imgMain;}
+.txtMain{grid-area: txtMain;}
+/*FLEXBOX*/
+header,ul,footer{display: flex;}
+.gridIndex footer{justify-content: space-around;}
+
+/*TRATAMIENTO IMG*/
+.imgMain img{width: 100%;}
+
+/*MEDIAQUERIE*/
+/*MOBILE*/
+@media only screen and (max-width: 768px){
+	body .gridIndex{background-color: green;}
+	header,footer{flex-direction: column;}
+	li{padding: 5px;}
+	ul{padding: 0;}
+	.gridMain{
+	display:flex;
+	flex-direction: column;
+	}
+}
+/*TABLET*/
+@media only screen and (min-width: 769px) and (max-width: 1023px){
+	body .gridIndex{background-color: orange;}
+}
+/*DESKTOP*/
+@media only screen and (min-width: 1024px){}
+
+/*GALERIA*/
+/*GRID GALERIA*/
+.gridGaleria{
+	display: grid;
+	grid-template-areas: 
+	"logo nav nav"
+	"encabezado encabezado encabezado"
+	"imgMainCuadradaIzq imgMainCuadradaDer imgMainVertical"
+	"imgMainHorizontal imgMainHorizontal imgMainVertical"
+	"footer footer footer";
+	grid-template-columns: 33% 33% 33%;
+	grid-template-rows: auto auto auto auto auto;
+}
+.logo{grid-area: logo;}
+nav{grid-area: nav;}
+.imgMainCuadradaIzq{grid-area: imgMainCuadradaIzq;}
+.imgMainCuadradaDer{grid-area: imgMainCuadradaDer;}
+.imgMainVertical{grid-area: imgMainVertical;}
+.imgMainHorizontal{grid-area: imgMainHorizontal;}
+.imgMainCuadradaIzq img,.imgMainCuadradaDer img, .imgMainVertical img, .imgMainHorizontal img{width: 100%;}
+
+/*MEDIAQUERIE MOBILE*/
+@media only screen and (max-width: 768px){
+	.gridGaleria{
+	display: grid;
+	grid-template-areas: 
+	"logo" 
+	"nav"
+	"encabezado"
+	"imgMainCuadradaIzq"
+	"imgMainCuadradaDer"
+	"imgMainVertical"
+	"imgMainHorizontal"
+	"footer";
+	grid-template-columns:100%;
+	grid-template-rows: auto auto auto auto auto auto auto auto;
+	}
+}
