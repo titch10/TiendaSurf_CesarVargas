@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New wave</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/estilos.css">
 </head>
 <body>
-    <div class="gridIndex">
+    <div class="gridIndex gradient">
      <header class="bgPrimario padB-20">
         <a href="../index.html"><img src="../assets/img/logo.jpg" width="180" height="57"  alt="logo-tienda"/></a><h1>NEW WAVE STORE</h1>
         <nav>
@@ -23,8 +24,8 @@
      <hr>
      <main class="gridMain">
         <div>
-            <h1> ¿Quienes somos?</h2>
-            <p >Somos una pyme nacida en México que busca expandirse a diferentes regiones de la nacion. <br> 
+            <h1 data-aos="flip-right"> ¿Quienes somos?</h1>
+            <p  data-aos="flip-right">Somos una pyme nacida en México que busca expandirse a diferentes regiones de la nacion. <br> 
                 Tenemos dos años de experiencia alquilando equipo a profesionales y turistas. Nuestra mision <br>
                 es brindar siempre la mejor atencion y seguridad a nuestro clientes, asi como seguir los lineamientos legales que se presenten.</p>
             
@@ -47,5 +48,9 @@
         </nav>
      </footer>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
