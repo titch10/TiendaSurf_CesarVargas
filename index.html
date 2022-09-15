@@ -6,87 +6,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New wave</title>
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Codystar&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Notable&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/estilos.css">
 </head>
-<body>
-    <div class="gridIndex gradient">
-     <header class="bgPrimario padB-20 container-fluid">
-        <div class="logo " data-aos="fade-down">
-          <a href="index.html"><img src="assets/img/logo.jpg" class="animacionImg" alt="logo-tienda" width="180" height="57"/></a><h1>NEW WAVE STORE</h1>
-        </div>
-        <nav data-aos="flip-left">
-            <ul >
-                <li><a href="pages/nosotros.html">NOSOTROS</a></li>
-                <li><a href="pages/catalogo.html">CÁTALOGO</a></li>
-                <li><a href="pages/servicios.html">SERVICIOS</a></li>
-                <li><a href="pages/reserva.html">Gestionar reserva</a>
-                    <ul>
-                        <li><a href="">Subitem</a></li>
-                        <li><a href="">Subitem</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-     </header>
-     <hr>
-     <main class="gridMain container-fluid">
-        <div class="encabezado" data-aos="zoom-in-down">
-            <h2>Renta de yates y equipo para buceo. Busca y ahorra</h2>
-            <ul>
-                <li>Cancelación gratuita.</li>
-                <li>Atención las 24h.</li>
-            </ul>
-        </div>
-        <div class="imgMain" data-aos="zoom-out-left">
-            <img src="assets/img/yate.jpg" width="480" height="257"  alt="Yate"/>
-            <p >Contamos con los mejores proveedores en equipo para surfeo y este mismo se encuentra certificado por la norma543. <br> 
-                El equipo es de primera calidad y tiene un uso moderado, se renta en la zona de Cancun.</p>
-        </div>
-        <div class="txtMain" data-aos="fade-up"
-        data-aos-duration="3000">
-        <button type="button" class="btn btn-primary">reservar</button>
-             <h3>Reserva ahora.</h3>
 
-                <form action="" method="">
-                    <ul>
-                     <li>
-                       <label for="name">Nombre:</label>
-                       <input type="text"  name="name" value="inserta tu nombre">
-                     </li>
-                     <li>
-                       <label for="mail">Correo electrónico:</label>
-                       <input type="email" name="mail" value="Danos un correo">
-                     </li>
-                     <li>
-                       <label for="fecha">Fecha:</label>
-                       <input type="date"  name="fecha" value="Fecha de reserva">                     
-                    </li>
-                     <li>   
-                        <input type="submit" value="Reservar">
-                     </li>
+<body>
+    <div class="container-fluid">
+        <header class="row sticky-top">
+        <div class="col-12 col-lg-12">
+          <nav class="navbar navbar-expand-lg bg-light sticky-top">
+            <div class="container-fluid">
+              <a class="navbar-brand title-head2" href="index.html"><img data-aos="zoom-in-down" src="assets/img/logo.jpg" alt="Bootstrap" width="60" height="48" class="img-fluid">  NEREO</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="pages/nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link"  href="pages/catalogo.html">Catálogo</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/servicios.html">Servicios</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Reservar
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="pages/reserva.html">Nueva reservación</a></li>
+                      <li><a class="dropdown-item" href="#">Cancelar reservación</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="pages/reserva.html">Buscar reservación</a></li>
                     </ul>
-                   </form>
-            
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-1" type="search" placeholder="Buscar en página" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+              </div>
+            </div>
+          </nav>
         </div>
+        </header>
+        <main class="row">
+         <div class="col-12 col-lg-12">
+            <div  class="masthead" style="background-image: url('assets/img/yate.jpg');">
+                <div class="color-overlay d-flex flex-column justify-content-center align-items-center">
+                    <h1 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">RENTA DE YATES | CANCÚN</h1>
+                </div>
+                <div class="color-overlay d-flex flex-column justify-content-end align-items-start">
+                    <h3 class="h2 " data-aos="zoom-in" data-aos-duration="1500">Cancelación gratuita</h3>
+                    <h3 class="h2" data-aos="zoom-in" data-aos-duration="1500">Atención 24 horas</h3>
+                </div>
+                <div class="color-overlay d-flex flex-column justify-content-start align-items-end px-5 py-5">
+                   <a href="pages/reserva.html"> <button type="button" class="btn btn-outline-warning">Reservar Yate</button> </a>
+                </div>
+            </div>
+         </div>
      </main>
-     <hr>
-     <footer class="bgSecundario padT-20 container-fluid"" data-aos="flip-left"
-     data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000">
-        <nav class="rrss">
-            <ul>
-                <li><a href="#">Aviso de privacidad</a></li>
-                <li><a href="#">Redes sociales</a></li>
-                <li><a href="#">Terminos y condiciones</a></li>
-                <li><a href="#">Ayuda</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
+     <footer class=" bg-dark text-white divfooter py-4">
+        <div class="container ">
+            <nav class="row">
+                <a href="https://www.instagram.com/nereoyacht_experiences/" target="blank" class="col-4 d-flex justify-content-center align-items-center text-reset text-uppercase">
+                    <img class="img-logo mr-20" width="50" height="50" src="assets/img/instagram.png" alt="">
+                </a>
+                <a href="" target="blank" class="col-4 d-flex justify-content-center align-items-center">
+                    <img width="50" height="50" src="assets/img/facebook.png" alt="">
+                </a>
+                <a href="" target="blank" class="col-4 d-flex justify-content-center align-items-center">
+                    <img width="50" height="50" src="assets/img/twitter.png" alt="">
+                </a>
+            </nav>
+        </div>
      </footer>
     </div>
-    
+    <script src="assets/js/bootstrap.bundle.min.js" ></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();

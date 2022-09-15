@@ -1,0 +1,14 @@
+h2 {
+  font-family: 'Rubik Moonrocks', cursive;
+  color: #3d3a34; }
+
+main {
+  background-color: #fffdf9; }
+  main div {
+    padding-top: 2%; }
+  main p {
+    font-family: 'Damion', cursive;
+    font-size: medium; }
+
+.espaciado {
+  padding-bottom: 50px; }
