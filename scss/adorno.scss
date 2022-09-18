@@ -3,3 +3,10 @@ h2{
     font-family: 'Rubik Moonrocks', cursive;
     color: $pintar;
 }
+
+
+@mixin flex-end{
+	display: flex;
+	flex-direction: row;
+	justify-content:flex-end;
+}
